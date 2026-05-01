@@ -6,6 +6,17 @@
   <meta name="description" content="Daniel Cezanne – Business Intelligence, Strategie und datengetriebene Entscheidungen für den modernen Unternehmer." />
   <title>Daniel Cezanne | Business Intelligence</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+  <style>
+    .sib-form { background-color: transparent !important; text-align: left !important; padding: 0 !important; }
+    #sib-container { background-color: var(--bg3) !important; border-color: var(--border) !important; border-radius: var(--radius) !important; max-width: 100% !important; }
+    #sib-container .sib-form-block p, #sib-container label.entry__label { color: var(--text) !important; font-family: var(--font) !important; }
+    #sib-container input.input { background-color: var(--bg2) !important; color: var(--text) !important; border: 1px solid var(--border) !important; border-radius: 8px !important; font-family: var(--font) !important; }
+    #sib-container input::placeholder { color: var(--text-dim) !important; }
+    #sib-container .sib-form-block__button { background-color: var(--accent) !important; border-radius: 8px !important; font-family: var(--font) !important; }
+    #sib-container .entry__specification { color: var(--text-dim) !important; }
+    #sib-container a { color: var(--accent2) !important; }
+  </style>
 </head>
 <body>
 
@@ -131,13 +142,69 @@
   <!-- NEWSLETTER -->
   <section class="section newsletter">
     <div class="container newsletter-inner">
-      <h2>Nichts verpassen.</h2>
-      <p>Neue Artikel, Insights und Tools – direkt in dein Postfach.</p>
-      <form class="newsletter-form" id="newsletter-form">
-        <input type="email" id="newsletter-email" placeholder="Deine E-Mail-Adresse" required />
-        <button type="submit" class="btn btn-primary">Anmelden</button>
-      </form>
-      <small id="newsletter-message">Kein Spam. Jederzeit abmeldbar.</small>
+      <div class="sib-form">
+        <div id="sib-form-container" class="sib-form-container">
+          <div id="error-message" class="sib-form-message-panel" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;max-width:540px;">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+              <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon"><path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"/></svg>
+              <span class="sib-form-message-panel__inner-text">Deine Anmeldung konnte nicht gespeichert werden. Bitte versuche es erneut.</span>
+            </div>
+          </div>
+          <div id="success-message" class="sib-form-message-panel" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#085229;background-color:#e7faf0;border-radius:3px;border-color:#13ce66;max-width:540px;">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+              <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"/></svg>
+              <span class="sib-form-message-panel__inner-text">Fast geschafft! Bitte bestätige deine Anmeldung über den Link in deiner E-Mail.</span>
+            </div>
+          </div>
+          <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center;max-width:540px;border-radius:3px;border-width:1px;border-style:solid;direction:ltr">
+            <form id="sib-form" method="POST" action="https://46eec479.sibforms.com/serve/MUIFAEckMUxzD-n2HjHS5sidw3_z5E9bd4Rd3hmtHMh8dZHS1TMGw6ANMi0LYYMHa6PmD1_IblombEhCl3q4X_vjIxFx7SEfgLfPKmPq3dILHxsYvYC977vBQ_S3RdPdI0OhFW95IvyxnSqFJYGF3OILV5-AKvTeeyv67rtjzdyYFV8AsZJUuaWrjqpxLsAcbKwy_-pJR1m9Op6yYA==" data-type="subscription">
+              <div style="padding:8px 0;">
+                <div class="sib-form-block" style="font-size:32px;text-align:left;font-weight:700;font-family:Helvetica,sans-serif;background-color:transparent;text-align:left">
+                  <p>Kein Artikel verpassen</p>
+                </div>
+              </div>
+              <div style="padding:8px 0;">
+                <div class="sib-form-block" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;background-color:transparent;text-align:left">
+                  <p>Neue Artikel zu Business Intelligence, Daten und besseren Entscheidungen — direkt in dein Postfach. Kein Spam. Jederzeit abmeldbar.</p>
+                </div>
+              </div>
+              <div style="padding:8px 0;">
+                <div class="sib-input sib-form-block">
+                  <div class="form__entry entry_block">
+                    <div class="form__label-row">
+                      <div class="entry__field">
+                        <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Deine E-Mail-Adresse" data-required="true" required />
+                      </div>
+                    </div>
+                    <label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label>
+                  </div>
+                </div>
+              </div>
+              <div style="padding:8px 0;">
+                <div class="sib-form-block" style="text-align:left">
+                  <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px;font-weight:700;font-family:Helvetica,sans-serif;color:#FFFFFF;border-width:0px;" form="sib-form" type="submit">
+                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/></svg>
+                    Jetzt anmelden
+                  </button>
+                </div>
+              </div>
+              <div style="padding:8px 0;">
+                <div class="sib-captcha sib-form-block">
+                  <div class="form__entry entry_block">
+                    <div class="form__label-row">
+                      <script>function handleCaptchaResponse(){var event=new Event('captchaChange');document.getElementById('sib-captcha').dispatchEvent(event);}</script>
+                      <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6Ld1N9MsAAAAADxLtP2c82puI03xZhJyApR1dNwY" data-callback="handleCaptchaResponse" style="direction:ltr"></div>
+                    </div>
+                    <label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label>
+                  </div>
+                </div>
+              </div>
+              <input type="text" name="email_address_check" value="" class="input--hidden">
+              <input type="hidden" name="locale" value="de">
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -155,44 +222,16 @@
   <script src="js/main.js"></script>
 
 <script>
-    document.getElementById('newsletter-form').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const email = document.getElementById('newsletter-email').value;
-      const btn = e.target.querySelector('button');
-      const msg = document.getElementById('newsletter-message');
-      
-      btn.disabled = true;
-      btn.textContent = 'Wird angemeldet...';
-      
-      try {
-        const response = await fetch('/.netlify/functions/subscribe', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email })
-        });
-        
-        const data = await response.json();
-        
-        if (data.success) {
-          msg.style.color = '#6c63ff';
-          msg.textContent = '✅ Willkommen! Du bist dabei 📬';
-          document.getElementById('newsletter-email').value = '';
-        } else {
-          throw new Error('Fehler');
-        }
-      } catch (error) {
-        msg.style.color = '#ff6b6b';
-        msg.textContent = '❌ Fehler. Bitte versuche es später erneut.';
-      } finally {
-        btn.disabled = false;
-        btn.textContent = 'Anmelden';
-        setTimeout(() => {
-          msg.style.color = '#8888aa';
-          msg.textContent = 'Kein Spam. Jederzeit abmeldbar.';
-        }, 5000);
-      }
-    });
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte einen Ländervorwahl aus.';
+    window.LOCALE = 'de';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+    window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein.";
+    window.GENERIC_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+    window.translation = { common: { selectedList: '{quantity} Liste ausgewählt', selectedLists: '{quantity} Listen ausgewählt', selectedOption: '{quantity} ausgewählt', selectedOptions: '{quantity} ausgewählt' } };
+    var AUTOHIDE = Boolean(0);
   </script>
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?hl=de"></script>
 </body>
 </html>
 <!-- Test deployment: 2026-04-17 13:33:17 UTC -->
